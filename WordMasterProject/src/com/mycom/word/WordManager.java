@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 //crud기능 관리 
 public class WordManager {
+	
 	Scanner s = new Scanner(System.in);
 	WordCRUD WordCRUD;
 	
@@ -11,7 +12,7 @@ public class WordManager {
 		WordCRUD = new WordCRUD(s);
 	}
 	
-	public int selectMenu() {
+	public int selectMenu() { //출력문 함수 
 		
 		System.out.print("*** 영단어 마스터 ***\n"
 				+"******************\n"
@@ -26,14 +27,18 @@ public class WordManager {
 				+"******************\n"
 				+"=> 원하는 메뉴는? "
 				);
+		return s.nextInt(); // 사용자에게 입력받은 값을 리턴 
 		
-		return s.nextInt();
 	}
-	public void start() {
+	public void start() {//메인함수에서 호출하는  
 		
 		while(true) {
-			int menu= selectMenu();
-			if(menu==0) break;
+			int menu= selectMenu(); //사용자가 입렵한 값을 메뉴에 저장 
+			if(menu==0) 
+			{
+				System.out.println("프로그램 종료! 다음에 만나요~");
+				break; //나가기 기능 
+			}
 			if(menu==4) {
 				//create
 				//wordCRUD에서 데이타추가되는 함수 실행 

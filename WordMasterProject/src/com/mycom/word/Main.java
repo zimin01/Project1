@@ -7,5 +7,4 @@ public class Main {
 		//System.out.println("Hello World! 안녕 ");
 		new WordManager().start();//WordManager안에 start 함수 호출 
 	}
-	
 }

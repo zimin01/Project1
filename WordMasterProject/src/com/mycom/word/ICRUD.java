@@ -8,3 +8,4 @@ public interface ICRUD {
 	public void selectOne(int id);//데이터조회 
 	
 }
+ 

@@ -39,6 +39,8 @@ public class Word {
 	public void setMeaning(String meaning) {
 		this.meaning = meaning;
 	}
+	
+	
 	@Override
 	public String toString() {
 		//toString()함수를 부르면 원하는 문자열의 포맷대로 출
@@ -46,7 +48,7 @@ public class Word {
 		
 		String slevel = "";
 		for(int i=0; i<level; i++) slevel+="*";
-		String str = String.format("%-3s", slevel)
+		String str = String.format("%-3s", slevel) //왼쪽정렬 
 				+ String.format("%15s", word) + "  " + meaning;
 		
 		return str;

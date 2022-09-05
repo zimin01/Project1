@@ -47,7 +47,6 @@ public class WordManager {
 			else if(menu==1) {
 				//list 출력
 				WordCRUD.listAll();
-				
 			}
 		}
 		

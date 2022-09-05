@@ -1,4 +1,5 @@
 # Project1
 
 ![screenshot_add](./screenshot/screenshot_add.png)
-<img src="./screenshot/screenshot_list.png", height="100px", width="200px">
+![screenshot_list](./screenshot/screenshot_list.png)
+![screenshot_exit](./screenshot/screenshot_exit.png)

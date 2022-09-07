@@ -7,7 +7,7 @@ public class Word {
 	private String meaning;
 	
 	//생성자 
-	Word(){}
+	Word(){}//빈 생성자 
 	Word(int id, int level, String word, String meaning){
 		this.id=id;
 		this.level=level;
